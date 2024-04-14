@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --SandTan: #e1b382;
+  --SandTanShadow: #c89666;
+  --NightBlue: #2d545e;
+  --NightBlueShadow: #12343b;
+
+  --textWhite: #ffff;
+  --textBlack: #0000;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar Starting  */
+.navbar {
+  background-color: var(--NightBlueShadow);
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  color: var(--SandTan);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px;
+  /* margin-right: 50px; */
+}
+.navbar .icons .nav-icon {
+  color: #ffff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px;
+  /* margin-right: 50px; */
+}
+.navbar-toggler i {
+  font-size: 20px;
+  color: var(--textWhite);
+}
+
+/* Navbar Ending */
+
+/* banner starting */
+
+#home .carousel-inner {
+  background-color: var(--SandTan);
+  color: var(--textWhite);
+}
+
+.carousel-inner .carousel-item {
+  margin: 40px 30px;
+}
+.carousel-inner .carousel-item a {
+  padding: 15px;
+  margin: 15px;
+  width: 60px;
+  background-color: var(--NightBlueShadow);
+  color: var(--textWhite);
+  border: none;
+  border-radius: 2px;
+}
+
+/* banner Ending */
+
+/* blog start */
+
+#blog .text {
+  color: var(--NightBlue);
+  text-decoration: underline var(--SandTan);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card-group .card {
+  border: none;
+}
+
+.card-group .card .card-body h5,
+p,
+a,
+i {
+  color: var(--NightBlue);
+  /* font-size: 15px; */
+  text-align: center;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.card-group .card .card-body a,
+i {
+  color: var(--SandTanShadow);
+}
+
+/* blog end */
+
+/* section-3 :start */
+.container-fluid {
+  background-color: var(--NightBlueShadow);
+}
+
+.three h2,
+.three p {
+  color: var(--textWhite);
+  margin-top: 5px;
+  font-weight: 700;
+}
+
+/* section-3 :End */
+
+/* team starting */
+.team h3 {
+  color: var(--NightBlue);
+  font-weight: 500;
+  line-height: 25px;
+}
+/* team Ending */
+/* newrelase start */
+.clearfix h1 {
+  color: var(--NightBlue);
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.clearfix a {
+  background-color: var(--NightBlueShadow);
+  color: #ffff;
+  /* justify-content: center; */
+  text-align: center;
+  padding: 15px;
+  margin-left: 300px;
+}
+
+/* newrelase end */
+
+/* brand */
+.brand h4 {
+  color: var(--SandTanShadow);
+  margin-left: 10px;
+}
+
+.brand hr {
+  color: var(--NightBlueShadow);
+}
+
+.footer {
+  background-color: var(--NightBlueShadow);
+  color: white;
+  font-size: 18px;
+  font-weight: 900;
+}

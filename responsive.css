@@ -1,0 +1,9 @@
+@media (min-width: 221px) and (max-width: 991px) {
+  .sidebar {
+    background-color: var(--NightBlueShadow);
+    backdrop-filter: blur(5px);
+  }
+  .icons .nav-link {
+    justify-content: start;
+  }
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap_Shoese_website</title>
+
+    <!-- Bootstrap CDN CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap CDN Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"
+        defer></script>
+
+
+    <!--  CDN Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <!-- custom script -->
+    <script src="script.js" defer></script>
+
+    <!-- jquery link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+    <!-- Navbar Starting  -->
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <!-- <a class="navbar-brand" href="#">Offcanvas navbar</a> -->
+            <img class="bg-white border-0  rounded-circle" src="images/Logo.png" alt="logo" style="width: 9%;">
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
+                    <img class="bg-white border-0  rounded-circle" src="images/Logo.png" alt="logo" style="width: 9%;">
+
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#client">Client</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#newRelease">New Releases</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class=" icons d-flex  justify-content-end">
+                            <a class="nav-icon" href="#"><i class="fa-brands fa-facebook-f fa-2xl text-white"></i></a>
+                            <a class="nav-icon" href="#"><i class="fa-brands fa-linkedin-in fa-2xl text-white"></i></a>
+                            <a class="nav-icon" href="#"><i class="fa-brands fa-github fa-2xl text-white"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar Ending -->
+
+    <!-- banner section starting -->
+    <section id="home">
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
+            data-bs-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active d-flex">
+                    <div class="col-md-5  col-sm-12 text-center m-auto">
+                        <h5>OUR PRODUCT</h5>
+                        <h1>Best Shoes Just For You</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, tempore.</p>
+                        <a href="#">View More</a>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <img src="images/first (1).jpg" class="d-block w-75" alt="logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner section Ending -->
+
+    <!-- blog starting -->
+    <section id="blog" class="mt-5">
+        <div class="row text-center m-auto mt-4 mb-2">
+            <h5>Our Product</h5>
+            <h1>Our Blogs</h1>
+        </div>
+        <div class="card-group m-auto">
+            <div class="card">
+                <img src="images/first (3).jpg" class="card-img-top w-100" alt="..." style="height: 65%;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Design Better</h5>
+                    <p class="card-text">Eu mea audiam equidem, has ad dolore officiis. No zril solet minimum sit.</p>
+                    <a href="#">Read More<i class="fa-solid fa-arrow-right-long m-2"></i></a>
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="images/first (1).jpg" class="card-img-top w-100" alt="..." style="height: 65%;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Brand New Look</h5>
+                    <p class="card-text">Eu mea audiam equidem, has ad dolore officiis. No zril solet minimum sit.</p>
+                    <a href="#">Read More<i class="fa-solid fa-arrow-right-long m-2"></i></a>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/first (2).jpg" class="card-img-top w-100 " alt="..." style="height: 65%;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Healthy LifeStyle</h5>
+                    <p class="card-text">Eu mea audiam equidem, has ad dolore officiis. No zril solet minimum sit.</p>
+                    <a href="#">Read More<i class="fa-solid fa-arrow-right-long m-2"></i></a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- blog Ending -->
+
+    <!-- SECTION-3 STARTING -->
+    <div class="container-fluid p-4">
+        <div class="row three">
+            <div class="col align-self-start text-center ">
+                <i class="fa-solid fa-globe fa-8x"></i>
+                <h2>Worldwide</h2>
+                <p>Vis ne postulant principes accommodare ius modo
+                </p>
+            </div>
+            <div class="col align-self-center text-center mt-5">
+                <i class="fa-solid fa-cart-shopping fa-8x"></i>
+                <h2>Online Shopping</h2>
+                <p>Vis ne postulant principes accommodare ius modo
+                </p>
+            </div>
+            <div class="col align-self-end mb-5 text-center">
+                <i class="fa-solid fa-thumbs-up fa-8x"></i>
+                <h2>Creativity</h2>
+                <p>Vis ne postulant principes accommodare ius modo
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION-3 ENDING -->
+
+    <!-- Team Work starting -->
+    <div class="container mt-4 team">
+        <div class="row g-2 m-auto text-center">
+            <div class="col-6">
+                <div class="p-3 text-center">
+                    <h3>Our Desginer</h3>
+                    <img src="images/Designer girl-pana.png" class="w-50" alt="">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="p-3 text-center">
+                    <h3>Social Media Team</h3>
+                    <img src="images/Connected world-pana.png" class="w-50" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team Work Ending -->
+
+    <!-- section NewRelease starting -->
+    <div class="clearfix">
+        <h1 class="text-center font-weight-bold  mb-5">Comfort Shoes</h1>
+        <video src="images/3D Shoe Animation and Footwears Video Animation.mp4" muted autoplay loop
+            class="col-md-6 float-md-end mb-3 ms-md-3 rounded-3 shadow"></video>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas suscipit consectetur nihil eaque nam
+            possimus cumque eligendi dolorem officiis, adipisci voluptatem modi. Quis voluptatem, assumenda placeat
+            provident ipsam consequuntur reprehenderit possimus soluta fugit quidem nostrum ducimus architecto hic, nam
+            eligendi doloremque inventore facere maxime adipisci quas. Molestias consequatur natus vitae facere quae
+            nisi. Doloribus tempora mollitia tenetur distinctio. Deleniti dolorem excepturi veritatis voluptate atque
+            facilis tempore consectetur voluptas, vel beatae corrupti, dignissimos, illum tempora exercitationem culpa
+            officia ullam labore perspiciatis corporis molestiae? Adipisci ratione deserunt sapiente maiores odio
+            aliquid nobis fugiat, ut reprehenderit aut non similique ullam, quis dicta eius laudantium sed vel
+            consequuntur fugit. Aut laborum quam nam! Numquam minima dolores rem dolore reiciendis facilis architecto
+            maxime saepe. Ullam earum ipsa quis consequatur assumenda qui magni molestiae, corrupti eveniet repudiandae
+            aspernatur minima doloribus, perferendis officiis sint quae unde quasi maiores dolore. Suscipit consequuntur
+            tempora voluptates enim dignissimos. Rem nobis dolorem nam quae tempora sit mollitia repellat obcaecati
+            dicta cupiditate eligendi quibusdam iusto expedita provident, officia
+        </p>
+        <a class="mt-5 justify-content-center" href="#">View More</a>
+    </div>
+    <!-- section NewRelease Ending -->
+    <!-- progress starting -->
+    <div class="clearfix mt-5 text-center brand">
+        <img src="images/shoess.jpeg" class="col-md-6 float-md-end mb-3 ms-md-3 shadow-lg rounded-bottom" alt="...">
+        <h1>Our Brands New Shoes</h1>
+        <div class="col mt-4">
+            <h4 class="text-start mt-3"> Quality</h4>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 95%;" aria-valuenow="95"
+                    aria-valuemin="0" aria-valuemax="100">95%</div>
+            </div>
+            <hr>
+            <h4 class="text-start m-3">Desgin</h4>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="95" aria-valuemin="0"
+                    aria-valuemax="100">85%</div>
+            </div>
+            <hr>
+            <h4 class="text-start m-3">purchasing</h4>
+            <div class="progress">
+                <div class="progress-bar bg-secondary" role="progressbar" style="width: 89%;" aria-valuenow="95"
+                    aria-valuemin="0" aria-valuemax="100">89%</div>
+            </div>
+            <hr>
+        </div>
+
+    </div>
+    </div>
+    <!-- progress ending -->
+
+    <footer>
+        <div class="container-fluid footer p-5">
+            <div class="row">
+                <div class="col">
+                    <img class="bg-white border-0  rounded-circle" src="images/Logo.png" alt="logo" style="width: 5%;">
+                    <span>Product Persentation</span>
+                    <h2 class="text-center">The Best and Easiest way to introduce your product</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nemo rerum asperiores ipsa dolore
+                        labore!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-flex justify-content-around">
+                    <h3>Developer: Momal Sadhwani</h3>
+                    <h3>Mentor: Engr Abrar Hussain Tunio</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
